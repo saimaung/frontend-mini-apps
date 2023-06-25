@@ -4,3 +4,6 @@
 
 ## Food Gallery
 ![Food Gallery](assets/food-gallery.png)
+
+## News Article Listings
+![News Article Listings](assets/new-article.png)
