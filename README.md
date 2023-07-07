@@ -7,3 +7,6 @@
 
 ## News Article Listings
 ![News Article Listings](assets/new-article.png)
+
+## Desktop Navigation
+![Desktop Navigation](assets/nav.png)
