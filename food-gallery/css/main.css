@@ -4,7 +4,7 @@ html {
 
 body {
     font-family: 'Playfair Display';
-    margin: 12em;
+    margin: 2em;
 }
 
 h1 {
@@ -17,16 +17,32 @@ span {
     color: #07801E;
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .container {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     width: 100%;
     height: 400px;
 }
 
 img {
-    width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 1rem;
+}
+
+@media  screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container img {
+        flex-grow: 1;
+    }
 }
