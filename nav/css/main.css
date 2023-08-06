@@ -20,10 +20,34 @@ header {
     margin: 0 auto;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 33%;
+    background-color: white;
+    height: 100vh;
+    padding: 4.6em;
+    transition: right .5s ease-in-out;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.close-btn {
+    cursor: pointer;
+    width: 3rem;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 6.6rem;
+}
+
+.menu-btn {
+    width: 3rem;
+    cursor: pointer;
 }
 
 .logo {
@@ -42,7 +66,8 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
     gap: 4.3em;
 }
 
@@ -77,4 +102,32 @@ a.cart p {
 
 a.cart:hover {
     background-color: #85C0CE;
+}
+
+.mobile-cart-menu {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.open {
+    right: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .menu-btn, .close-btn {
+        display: none;
+    }
+
+    nav {
+        position: unset;
+        height: auto;
+        background: none;
+        padding: 0;
+        width: auto;
+    }
+
+    ul {
+        flex-direction: row;
+    }
 }

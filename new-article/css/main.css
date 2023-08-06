@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    margin: 0 6.7em;
+    margin: 0;
     background: #FCF5EB;
     font-family: 'Poppins';
 }
@@ -14,7 +14,7 @@ h1 {
 
 h1.mainhead {
     font-size: 4.4rem;
-    margin-top: 5em;
+    margin-top: 2em;
     position: relative;
 }
 
@@ -29,11 +29,14 @@ h1.mainhead::before {
 }
 
 main {
-    margin: 5em;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2.4em;
 }
 
 section {
     display: flex;
+    flex-direction: column;
     gap: 3.4em;
     font-size: 2.2rem;
     border-top: 1px solid black;
@@ -42,4 +45,24 @@ section {
 section p {
     font-size: 1.4rem;
     color: #44403A;
+}
+
+@media screen and (min-width: 600px) {
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+    article {
+        flex: 1;
+    }
+    .first {
+        flex-basis: 100%;
+    }   
+}
+
+@media screen and (min-width: 900px) {
+    .first {
+        flex-basis: 0;
+    }
 }

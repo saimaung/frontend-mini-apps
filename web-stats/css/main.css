@@ -1,0 +1,109 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181818;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.8rem;
+    margin-top: 13.7rem;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.container {
+    border-radius: 1em;
+    font-family: 'Poppins';
+    color: white;
+    width: 30rem;
+    padding-left: 4.7rem;
+}
+
+.current-visitors {
+    background-color: #7000FF;
+}
+
+.num-visitor {
+    font-size: 5.5em;
+    font-weight: bold;
+} 
+
+.num-visitor-desc {
+    font-size: 1.8em;
+    margin: 0;
+    padding-bottom: 4.8rem;
+}
+
+.page-views {
+    display: flex;
+}
+
+.page-stats {
+    border: 3px solid #2E2E2E;
+    padding-top: 5.6rem;
+    padding-bottom: 5.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-stats-count {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.page-stats-text {
+    font-size: 1.8rem;
+}
+
+.unique-visitors {
+    display: flex;
+}
+
+.cta {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background-color: #7000FF;
+}
+
+.footer {
+    font-size: 1.4rem;
+    color: #878787;
+}
+
+.footer p {
+    text-transform: none;
+}
+
+span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .container {
+        width: 56.5rem;
+    }
+
+    .page-stats {
+        flex-direction: row;
+    }
+
+}
